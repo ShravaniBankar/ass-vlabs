@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #f4f4f4;
+            padding: 1em;
+            text-align: center;
+        }
+        .container {
+            padding: 1em;
+        }
+        .section {
+            margin-bottom: 1em;
+        }
+        footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Page</h1>
+    </header>
+    <div class="container">
+        <div class="section" id="introduction">
+            <h2>Introduction</h2>
+            <p>This is the <span style="font-weight: bold;">Introduction</span> section where we provide an overview of the page. We aim to offer <span style="color: #007BFF;">informative</span> content that is <span style="font-style: italic;">engaging</span> and <span style="font-weight: bold; color: #FF5733;">useful</span> to our visitors.</p>
+        </div>
+        <div class="section" id="features">
+            <h2>Features</h2>
+            <p>Our page offers several <span style="font-weight: bold;">key features</span> including:</p>
+            <ul>
+                <li><span style="color: #2863a7;">Feature 1</span> - <span style="font-style: italic;">Detailed description</span></li>
+                <li><span style="color: #257cbe;">Feature 2</span> - <span style="font-style: italic;">Detailed description</span></li>
+                <li><span style="color: #2074b8;">Feature 3</span> - <span style="font-style: italic;">Detailed description</span></li>
+            </ul>
+        </div>
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>If you have any questions, please <span style="font-weight: bold;">reach out</span> to us via the contact form or email us at <span style="color: #FF5733;">info@example.com</span>.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; <span id="year"></span> My Web Page. All rights reserved.
+    </footer>
+    <script>
+        // Set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
